@@ -177,7 +177,7 @@ export default function Navbar() {
                   <div className="border-b border-gray-200">
                     <Tab.List className="-mb-px flex space-x-8 px-4">
                       {navigation.categories.map((category) => (
-                        <Tab
+                        <Tab  
                           key={category.name}
                           className={({ selected }) =>
                             classNames(
@@ -306,7 +306,7 @@ export default function Navbar() {
               </div>
 
               {/* Flyout menus */}
-              <Popover.Group className="hidden lg:ml-8 lg:block lg:self-stretch">
+              <Popover.Group className="hidden lg:ml-8 lg:block lg:self-stretch z-50">
                 <div className="flex h-full space-x-8">
                   {navigation.categories.map((category) => (
                     <Popover key={category.name} className="flex">

@@ -1,14 +1,14 @@
   import React from 'react'
-  import Navbar from '../common/Navbar'
 import  MainCarousel  from './MainCarousel'
 import SectionCarousel from './SectionCarousel'
-import { mensKurtaData } from '../../Data/Mens/mensKurtaData'
-  const Homepage = () => {
+import {dress} from '../../Data/dress'
+import { mens_kurta } from '../../Data/Men/men_kurta'
+const Homepage = () => {
     return <>
-      <Navbar/>
       <MainCarousel/>
-      <SectionCarousel data={mensKurtaData} section="Mens Kurta"/>
-      <SectionCarousel data={mensKurtaData} section="Mens Kurta"/>
+      <SectionCarousel data={mens_kurta} section="Mens Kurta"/>
+      <SectionCarousel data={dress} section="Dress"/>
+      
     </>
   }
 

@@ -3,9 +3,10 @@ import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import { MainCarouselData } from '../../Data/MainCarouselData';
 
-const items = MainCarouselData.map((item)=><img className="cursor-pointer" role='presentation' src={item.src} alt=''/>)
 
-const MainCarousel = () => (
+const MainCarousel = () => {
+    const items = MainCarouselData.map((item)=><img className="cursor-pointer" role='presentation' src={item.src} alt=''/>)
+return <>
     <AliceCarousel
         items={items}
         infinite
@@ -13,5 +14,6 @@ const MainCarousel = () => (
         autoPlayInterval={1000}
         disableButtonsControls
     />
-);
+</>
+}
 export default MainCarousel;
